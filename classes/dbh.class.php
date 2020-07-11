@@ -2,10 +2,10 @@
 
     class Dbh {
 
-        private $host = "localhost";
-        private $user = "root";
-        private $pass = "";
-        private $dbName = "blogster";
+        private $host;
+        private $user;
+        private $pass;
+        private $dbName;
 
         protected function connect() {
             $dns = 'mysql:host=' . $this->host . ';dbname=' . $this->dbName;
